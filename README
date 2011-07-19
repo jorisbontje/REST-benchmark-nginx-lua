@@ -13,10 +13,10 @@ Starting the servers:
 
 Import data:
 
-    $ ./json2tsv.py <data_1000.json | ktremotemgr import --
+    $ ./json2tsv.py <data_1000.json | ktremotemgr import -- >/dev/null
 
 Accessing the service:
 
-    $ curl -v -d @test/4.json "http://localhost:8080/kyoto/rest/put/4"
+    $ curl -v -d @test/4.json http://localhost:8080/kyoto/rest/put/4
 
-    $ curl -v "http://localhost:8080/kyoto/rest/get/4"
+    $ curl -v http://localhost:8080/kyoto/rest/get/4
