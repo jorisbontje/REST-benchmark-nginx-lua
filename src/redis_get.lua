@@ -1,6 +1,6 @@
 local request_id = tonumber(ngx.var.id)
 
-local res = ngx.location.capture("/redis/get",
+local res = ngx.location.capture("/backend/redis/get",
     { args = { key = request_id } }
 )
 
